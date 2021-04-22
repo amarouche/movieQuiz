@@ -1,0 +1,42 @@
+<div class="content" role="main" *ngIf="question">
+    <div class="row">
+        <div *ngIf="!gameOverScreen" class="card">
+            <div id="formContent">
+                <img [src]="question.acting_profile_path" [alt]="question.acting_profile_path" width="300" height="300">
+                <img [src]="question.poster_path" [alt]="question.movie_titel" width="300" height="300">
+                <h3 id="question">
+                    <p>Did
+                        <span style="color: #455de8">{{question.acting_name}}</span> play in
+                        <span style="color: #455de8">{{question.movie_titel}}</span> ?
+                    </p>
+                </h3>
+            </div>
+            <div id="formFooter">
+                <button type="button" (click)="nextQuistion(false,question.response)" class="btn no_btn">No</button>
+                <button type="button" (click)="nextQuistion(true,question.response)" class="btn yes_btn">Yes</button>
+                <div id="cercle">
+                    <h3 style="padding: 24%;">{{ timeLeft }}</h3>
+                </div>
+                <h3>Your Srore: {{ currentScore }}</h3> <br><br>
+                <button type="button" [routerLink]="['/']" class="btn home_btn">
+                    <span class="glyphicon glyphicon-home"></span> Home</button>
+            </div>><br>
+
+        </div>
+        <div *ngIf="gameOverScreen" class="card">
+            <div id="formContent">
+                <img id="gameover" src="../../assets/images/gameover.png" width="300" height="150">
+            </div>
+            <div id="formFooter">
+                <h3> Your Score: {{ currentScore }}</h3>
+                <h3> Best Score: {{ bestScore }}</h3>
+                <button type="button" (click)="replay()" class="btn play_btn">
+                    <span class="glyphicon glyphicon-retweet"></span> Retry </button><br><br>
+                <button type="button" [routerLink]="['/']" class="btn home_btn">
+                    <span class="glyphicon glyphicon-home"></span> Home </button>
+                <share-button button="facebook" text="Share" [showText]="true"></share-button>
+                <share-button button="twitter" text="Tweet" [showText]="true"></share-button>
+            </div><br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+.content {
+    display: flex;
+    margin: 20px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+}
+
+.card {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(95, 89, 89, 0.9);
+}
+
+.yes_btn {
+    color: black;
+    background-color: #12ff2e98;
+    width: 100px;
+    top: 200%;
+    margin-left: 15%;
+}
+
+.yes_btn:hover {
+    color: black;
+    background-color: #12ff2e4d;
+}
+
+.no_btn {
+    color: black;
+    background-color: #ff1212c2;
+    width: 100px;
+    top: 180%;
+}
+
+.no_btn:hover {
+    color: black;
+    background-color: #eb08085b;
+}
+
+#formContent {
+    padding: 30px;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+#question {
+    height: 40px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #272727;
+}
+
+#cercle {
+    width: 50px;
+    height: 50px;
+    border-radius: 29px;
+    background-color: #1255ff;
+    margin-left: 47%;
+}
+
+#formFooter {
+    padding: 25px;
+    text-align: center;
+    margin: 0 20% 1% 20%;
+    // -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #272727;
+    color: #fdfdfd;
+}
+
+#gameover {
+    margin-left: 10%;
+    width: 300px;
+    height: 150;
+}
+
+.home_btn {
+    color: black;
+    background-color: #4242f5;
+    width: 100px;
+    top: 200%;
+    // margin-left: 1%;
+}
+
+.play_btn {
+    color: black;
+    background-color: #12ff32c2;
+    width: 100px;
+    top: 200%;
+    // margin-left: 30%;
+}

@@ -1,0 +1,40 @@
+.content {
+    display: flex;
+    margin: 20px auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+}
+
+.card {
+    margin: 0 auto;
+    width: 100%;
+    background-color: rgba(95, 89, 89, 0.9);
+}
+
+.start_btn {
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    top: 200%;
+}
+
+.start_btn:hover {
+    color: black;
+    background-color: #ffc4128e;
+}
+
+#formContent {
+    padding: 30px;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+#formFooter {
+    padding: 25px;
+    text-align: center;
+    margin: 0 20% 1% 20%;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #272727;
+    color: #fdfdfd;
+}
